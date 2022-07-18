@@ -9,7 +9,7 @@ if(isset($_POST["submitbutton"]))
 {
    //1.fetch form data
    $firstname= $_POST['firstname'];
-   $lastname= $_POST['lastsame'];
+   $lastname= $_POST['lastname'];
    $phonenumber= $_POST['phonenumber'];
    $email= $_POST['email'];
    $message= $_POST['message'];
@@ -19,15 +19,6 @@ if(isset($_POST["submitbutton"]))
     $insertData = mysqli_query($conn, "INSERT INTO
     contactus(firstname,lastname,phonenumber,email,message)
     VALUES('$firstname', '$lastname','$phonenumber','$email','$message')");
-
-if($insertData)
-{
-   echo "Data submitted successfully";
-}
-else
-{
-   echo "Error occurred";
-} 
 }
 ?>
 <!DOCTYPE html>

@@ -9,7 +9,7 @@ if(isset($_POST["submitbutton"]))
 {
    //1.fetch form data
    $firstname= $_POST['firstname'];
-   $lastname= $_POST['lastname'];
+   $lastname= $_POST['lastsame'];
    $phonenumber= $_POST['phonenumber'];
    $email= $_POST['email'];
    $message= $_POST['message'];
@@ -41,7 +41,7 @@ else
 </head>
 <body>
     <!--  navigation starts here -->
-    <!-- <nav class="navbar navbar-expand-lg bg-light fixed-top shadow ">
+    <nav class="navbar navbar-expand-lg bg-light fixed-top shadow ">
         <div class="container-fluid">
             <a href="index.php" class="navbar-brand">Zalego Academy</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#menus">
@@ -55,7 +55,7 @@ else
                 </div>
             </div>
         </div>
-    </nav> -->
+    </nav>
     <!-- end navigation bar -->
     <main class="p-5 bg-light mb-4 ">
         <h1>Welcome Cosmas Kung'u</h1>
